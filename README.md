@@ -6,17 +6,6 @@ Welcome to the **PDF Parsing Chatbot** repository, developed as a final internsh
 
 The PDF Parsing Chatbot uses **OpenAI** and **LangChain** for intelligent data retrieval and query handling from PDF documents. It incorporates **Groq (Llama3)** for high-performance language modeling, allowing complex, multi-layered queries. 
 
-## Table of Contents
-
-1. [Features](#features)
-2. [Technologies Used](#technologies-used)
-3. [Project Structure](#project-structure)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Future Improvements](#future-improvements)
-7. [Contributing](#contributing)
-8. [License](#license)
-
 ## Features
 
 - **Advanced Language Modeling**: Utilizes **Groq (Llama3)** for handling complex language queries with contextual understanding.
@@ -28,64 +17,14 @@ The PDF Parsing Chatbot uses **OpenAI** and **LangChain** for intelligent data r
 
 ## Technologies Used
 
-- **Python**: Backend programming language.
+- **Python**: Core programming language for backend development.
 - **OpenAI API**: Powers language generation and natural language understanding.
 - **LangChain**: Facilitates document processing, indexing, and integration with RAG pipelines.
 - **Groq (Llama3)**: Advanced language model for robust query handling and contextual responses.
 - **Groq Python API**: Used to explore model capabilities and enhance RAG.
-- **PDF Parsing Libraries**: Libraries such as `PyMuPDF`, `pdfminer.six`, or `pdfplumber` for PDF extraction.
-- **OCR**: `Tesseract` OCR for text extraction from scanned documents.
+- **Sentence Transformers**: Python framework for state-of-the-art sentence, text, and image embeddings.
+- **Streamlit**: Platform for hosting and deploying the chatbot for a user-friendly web interface.
 - **FastAPI**: Web framework to serve chatbot as a REST API.
-
-## Project Structure
-
-```
-pdf-parsing-chatbot/
-│
-├── data/                        # Sample PDF files for testing
-├── src/                         # Source code
-│   ├── app/                     # FastAPI application and endpoints
-│   ├── chatbot/                 # Chatbot and NLP processing logic
-│   ├── pdf_parser/              # PDF parsing and OCR logic
-│   ├── rag_pipeline/            # RAG system integrating Groq and LangChain
-│   ├── tests/                   # Unit tests
-│   └── utils/                   # Utility functions
-├── requirements.txt             # Required libraries and dependencies
-├── README.md                    # Project documentation
-└── config.yaml                  # Configuration file for setting parameters
-```
-
-## Installation
-
-To run this project locally:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/pdf-parsing-chatbot.git
-   cd pdf-parsing-chatbot
-   ```
-
-2. **Set up a virtual environment** (recommended):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure OCR and PDF Parsing**:
-   Ensure `Tesseract OCR` is installed and added to your PATH.
-
-5. **Run the Application**:
-   ```bash
-   uvicorn src.app.main:app --reload
-   ```
-
-6. **Access the Chatbot**:
-   Navigate to `http://localhost:8000` in your browser to interact with the chatbot.
 
 ## Usage
 
@@ -106,14 +45,6 @@ To run this project locally:
 - **Scalable Multi-Document Support**: Allow simultaneous parsing of multiple PDFs.
 - **Improved NLP for Complex Queries**: Enhance chatbot’s language model to better interpret nuanced questions.
 
-## Contributing
-
-Feel free to fork the repository and submit pull requests for any new features, bug fixes, or enhancements. Please follow the project's coding standards and guidelines for contributions.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ---
 
-Thank you for exploring the PDF Parsing Chatbot! For any issues or feedback, please feel free to reach out.
+Thank you for exploring the PDF Parsing Chatbot!
