@@ -34,17 +34,8 @@ The PDF Parsing Chatbot uses **OpenAI** and **LangChain** for intelligent data r
    - "List all sections related to employee benefits."
 3. **Receive Responses**: The chatbot parses and retrieves information using RAG, Groq, and LangChain for accurate answers.
 
-### API Endpoints
-
-- **POST /upload_pdf**: Upload a PDF for parsing.
-- **POST /query**: Send a query to the chatbot about the uploaded PDF.
-
 ## Future Improvements
 
 - **Extended RAG Capabilities**: Expand retrieval algorithms to handle more complex documents.
 - **Scalable Multi-Document Support**: Allow simultaneous parsing of multiple PDFs.
 - **Improved NLP for Complex Queries**: Enhance chatbot’s language model to better interpret nuanced questions.
-
----
-
-Thank you for exploring the PDF Parsing Chatbot!
